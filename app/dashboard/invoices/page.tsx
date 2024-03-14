@@ -8,7 +8,7 @@ import { Suspense } from 'react'
 import Search from '@/app/ui/search'
 import { fetchInvoicesPages } from '@/app/lib/data'
 
-
+// las paginas de nextjs reciben los parametros de busqueda y pagina como props, en este caso se desestructura el objeto searchParams para obtener los valores de query y page, si no hay valores por defecto se asigna un string vacio y 1 respectivamente
 export default async function Page({
     searchParams
 }:{  
